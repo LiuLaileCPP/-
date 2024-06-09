@@ -1,5 +1,5 @@
-#GitHub
-##GitHub三要素:
+# GitHub
+## GitHub三要素:
 **Repository仓库**<br>
 项目管理存储基本单位
 一个仓库中存储一个项目，一个用户可以拥有多个仓
@@ -9,7 +9,7 @@ git commit -m "提交说明" #提交到本地仓库<br>
 **Branch分支**<br>
 在仓库中可以包含多个分支，分支才是代码文件的第
 一存储单位，默认的仓库主分支为master/main<br>
-##仓库内容
+## 仓库内容
 * Code，资源存储，
 代码资源，
 二进制，项目管理脚
@@ -18,7 +18,7 @@ git commit -m "提交说明" #提交到本地仓库<br>
 * README，使用markdown语言编写，工程自述说明<br>
 * LICENSE 许可证:GPL2.0,3.0.Apahce 2.0，Mit，这
 些许可证，给使用者最大使用权限以及最少的限制<br>
-##设备认证
+## 设备认证
 进入到仓库文件夹下执行<br>
 git init // 创建本地仓库
 *后续对仓库的操
@@ -31,17 +31,17 @@ ssh-keygen -t rsa -c“注册邮箱’
 rsa.pub 复制密文，粘贴到 settings -> ssH key and
 GPG -> new ssh key ->粘贴<br>
 **测试是否关联**ssh -T git@github.com #SSH远程登入<br>
-##为云端仓库起别名 方便上传
+## 为云端仓库起别名 方便上传
 git remote add 别名 SSH地址(云端仓库地址)
 <br>git remote remove 别名 #删除起的别名
-##代码上传步骤
+## 代码上传步骤
 1. git add code.c #代码写入git缓冲区
 2. git commit -m "提交说明" #代码提交到本地仓库文件夹
 3. git push 仓库别名 master #代码上传到云端仓库的master分支
 git rm #删除本地文件及仓库数据<br>
 git restore #本地仓库中存在时恢复被删除的文件<br>
 git status #查看状态<br>
-##代码更新的依赖关系被破坏
+## 代码更新的依赖关系被破坏
 *本地内容要比云端新,完成更新替换， 但是如果直接
 修改云端内容,导致,本地内容无法再次提交*
 **解决办法：**先拉取 git pul 云端内容 与本地内容合井或操作,
@@ -51,9 +51,9 @@ git status #查看状态<br>
 * git rebase --abort #忽略新版，此时还不能上传
 * git rebase --skip #忽略旧版本，更新本地代码后可上传
 * git rebase --continue #版本合并，解决冲突后直接上传
-##下载代码
+## 下载代码
 git clone "https仓库地址" 
-##MarkDown语法
+## MarkDown语法
 \*斜体\* *斜体* \*\*粗体\*\* **粗体**  \*\*\*粗斜体\*\*\* ***斜粗体***
 \~\~删除线\~\~ ~~删除线~~
 <br>分割线：---
